@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KopiKita Coffee Shop</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-amber-800">
+                ☕ KopiKita
+            </h1>
+
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="#home" class="hover:text-amber-700 transition">Beranda</a>
+                <a href="#about" class="hover:text-amber-700 transition">Tentang</a>
+                <a href="#menu" class="hover:text-amber-700 transition">Menu</a>
+                <a href="#testimoni" class="hover:text-amber-700 transition">Testimoni</a>
+                <a href="#contact" class="hover:text-amber-700 transition">Kontak</a>
+            </nav>
+
+            <button class="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition">
+                Pesan Sekarang
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-r from-stone-900 via-stone-800 to-stone-700 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <span class="bg-amber-600 px-4 py-2 rounded-full text-sm">
+                    Premium Coffee Experience
+                </span>
+
+                <h2 class="text-5xl md:text-7xl font-bold mt-6 leading-tight">
+                    Nikmati Secangkir
+                    <span class="text-amber-400">Kopi Terbaik</span>
+                </h2>
+
+                <p class="mt-6 text-lg text-gray-300">
+                    Dibuat dari biji kopi pilihan Indonesia dengan cita rasa khas
+                    dan aroma yang memanjakan setiap momen Anda.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#menu"
+                        class="bg-amber-600 hover:bg-amber-700 px-7 py-3 rounded-full font-semibold transition">
+                        Lihat Menu
+                    </a>
+
+                    <a href="#about"
+                        class="border border-white px-7 py-3 rounded-full hover:bg-white hover:text-black transition">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+                    alt="Coffee"
+                    class="rounded-3xl shadow-2xl w-full max-w-lg">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+            <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+                alt="Coffee Shop"
+                class="rounded-3xl shadow-lg">
+
+            <div>
+                <h3 class="text-4xl font-bold mb-6">
+                    Tentang KopiKita
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    KopiKita hadir untuk menghadirkan pengalaman menikmati kopi
+                    yang berbeda. Kami menggunakan biji kopi pilihan dari berbagai
+                    daerah di Indonesia yang diproses dengan standar kualitas tinggi.
+                </p>
+
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Dengan suasana yang nyaman dan pelayanan ramah, kami menjadi
+                    tempat yang sempurna untuk bekerja, bersantai, maupun berkumpul
+                    bersama teman dan keluarga.
+                </p>
+
+                <div class="grid grid-cols-3 gap-6 text-center">
+                    <div>
+                        <h4 class="text-3xl font-bold text-amber-700">10+</h4>
+                        <p class="text-gray-500">Tahun</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-3xl font-bold text-amber-700">50K+</h4>
+                        <p class="text-gray-500">Pelanggan</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-3xl font-bold text-amber-700">30+</h4>
+                        <p class="text-gray-500">Menu</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-24 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold">Menu Favorit</h3>
+                <p class="text-gray-600 mt-4">
+                    Pilihan minuman dan makanan terbaik untuk menemani hari Anda.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Cappuccino</h4>
+                        <p class="text-gray-500 mt-2">Perpaduan espresso dan susu yang lembut.</p>
+                        <p class="mt-4 text-amber-700 font-bold text-xl">Rp28.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Latte</h4>
+                        <p class="text-gray-500 mt-2">Espresso dengan susu creamy.</p>
+                        <p class="mt-4 text-amber-700 font-bold text-xl">Rp30.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Americano</h4>
+                        <p class="text-gray-500 mt-2">Kopi hitam dengan cita rasa kuat.</p>
+                        <p class="mt-4 text-amber-700 font-bold text-xl">Rp25.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Mocha</h4>
+                        <p class="text-gray-500 mt-2">Kombinasi kopi dan cokelat premium.</p>
+                        <p class="mt-4 text-amber-700 font-bold text-xl">Rp32.000</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold">Apa Kata Mereka?</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg">
+                    <p class="text-gray-600">
+                        "Tempatnya nyaman banget untuk kerja dan ngopi. Kopinya juga berkualitas."
+                    </p>
+                    <h4 class="font-bold mt-4">Andi Pratama</h4>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg">
+                    <p class="text-gray-600">
+                        "Pelayanannya cepat dan ramah. Latte favorit saya di sini."
+                    </p>
+                    <h4 class="font-bold mt-4">Siti Rahma</h4>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg">
+                    <p class="text-gray-600">
+                        "Suasananya estetik dan cocok untuk nongkrong bersama teman."
+                    </p>
+                    <h4 class="font-bold mt-4">Budi Santoso</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-amber-700 text-white">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h3 class="text-4xl font-bold mb-6">
+                Temukan Secangkir Kebahagiaan Hari Ini
+            </h3>
+
+            <p class="text-lg mb-8 text-amber-100">
+                Kunjungi Coffee Shop kami dan rasakan pengalaman kopi yang berbeda.
+            </p>
+
+            <button class="bg-white text-amber-700 px-8 py-3 rounded-full font-bold hover:scale-105 transition">
+                Pesan Sekarang
+            </button>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold">Hubungi Kami</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        Informasi Kontak
+                    </h4>
+
+                    <p class="mb-3">📍 Jl. Sudirman No. 123, Jakarta</p>
+                    <p class="mb-3">📞 +62 812 3456 7890</p>
+                    <p class="mb-3">✉️ hello@kopikita.com</p>
+                    <p>🕒 Setiap Hari, 08.00 - 22.00</p>
+                </div>
+
+                <form class="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Nama"
+                        class="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-amber-500">
+
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        class="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-amber-500">
+
+                    <textarea
+                        rows="5"
+                        placeholder="Pesan"
+                        class="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+
+                    <button
+                        type="submit"
+                        class="bg-amber-700 text-white px-8 py-3 rounded-xl hover:bg-amber-800 transition">
+                        Kirim Pesan
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h4 class="text-2xl font-bold mb-2">☕ KopiKita</h4>
+            <p class="text-gray-400">
+                © 2026 KopiKita Coffee Shop. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
